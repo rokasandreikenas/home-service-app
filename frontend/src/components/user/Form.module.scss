@@ -1,0 +1,39 @@
+.container {
+  height: 100%;
+  padding-top: 8rem;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: rgba(86, 20, 208, 0.25) 5px 5px 15px;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.link {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.signUp {
+  color: $primary-color;
+  font-weight: 500;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: red;
+  margin: 1rem 0;
+}

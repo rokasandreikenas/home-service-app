@@ -1,0 +1,26 @@
+.hero {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 5rem;
+}
+
+.primary {
+  color: $primary-color;
+}
+
+.subtitle {
+  color: #a8a8a8;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.searchContainer {
+  display: flex;
+  margin: 2rem auto;
+  width: 30%;
+  gap: 1rem;
+}

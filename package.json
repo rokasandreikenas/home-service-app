@@ -1,0 +1,18 @@
+{
+  "name": "directdigits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend && yarn && yarn build && yarn start",
+    "heroku-postbuild": "cd frontend && yarn && yarn build",
+    "deploy": "git push heroku main"
+  },
+  "engines": {
+    "node": "20.x",
+    "yarn": "1.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

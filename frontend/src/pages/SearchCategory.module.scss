@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.categories {
+  width: 30%;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.categoryContainer {
+  width: 70%;
+}
+
+.businessList {
+  grid-template-columns: repeat(3, 1fr);
+}

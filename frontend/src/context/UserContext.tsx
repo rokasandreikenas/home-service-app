@@ -15,8 +15,14 @@ const UserContext = createContext<{
 });
 
 const UserProvider = ({ children }: PropsWithChildren) => {
-  const [user, setUser] = useLocalStorage<User | null>("user", null);
-  const [, setToken] = useLocalStorage<string | null>("token", null);
+  const [user, setUser, removeUser] = useLocalStorage<User | null>(
+    "user",
+    null
+  );
+  const [, setToken, removeToken] = useLocalStorage<string | null>(
+    "token",
+    null
+  );
 
   const isLoggedIn = !!user;
 
@@ -26,8 +32,8 @@ const UserProvider = ({ children }: PropsWithChildren) => {
   };
 
   const logout = () => {
-    setUser(null);
-    setToken(null);
+    removeUser();
+    removeToken();
   };
 
   return (

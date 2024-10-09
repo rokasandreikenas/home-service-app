@@ -8,7 +8,7 @@ import Avatar from "../common/Avatar";
 import { UserContext } from "@/context/UserContext";
 
 const Topbar = () => {
-  const { user } = useContext(UserContext);
+  const { user, logout } = useContext(UserContext);
   const navigate = useNavigate();
 
   const links = [
@@ -42,7 +42,9 @@ const Topbar = () => {
       </div>
       <div className={styles.rightSide}>
         {user ? (
-          <Avatar>{user.name[0]}</Avatar>
+          <div onClick={logout} className={styles.pointer}>
+            <Avatar>{user.name[0]}</Avatar>
+          </div>
         ) : (
           <Button onClick={() => navigate(ROUTES.LOGIN)} large>
             Login / Sign Up
